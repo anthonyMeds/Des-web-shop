@@ -60,3 +60,33 @@ html{
     flex-direction: column;
     align-items: center;
 }
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    height: 75%;
+    width: 100%;
+}
+
+.botao-carrinho{
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    border-color: white;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    transition: 500ms;
+}
+
+button:hover{
+    background-color: white;
+    border-color: black;
+    color: black;
+}
