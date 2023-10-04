@@ -157,7 +157,7 @@ html{
     border-bottom: 2px solid #f83535;
   }
   
-  input[type=text]:placeholder {
+  input[type=text]::placeholder {
     color: #cccccc;
   }
 
