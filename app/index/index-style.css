@@ -64,15 +64,16 @@ html{
 .menu{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 150px;
     justify-content: center;
-    height: 75%;
+    height: 50%;
     width: 100%;
 }
 
 .botao-carrinho{
     width: 150px;
     height: 50px;
+    border: 1px solid;
     border-radius: 25px;
     border-color: white;
     color: white;
@@ -83,10 +84,11 @@ html{
     gap: 10px;
     align-items: center;
     transition: 500ms;
+    margin-bottom: 10px;
 }
 
-button:hover{
+.botao-carrinho:hover{
     background-color: white;
-    border-color: black;
+    border: 1px solid black;
     color: black;
 }
