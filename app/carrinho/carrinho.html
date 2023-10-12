@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho de compras</title>
+    <link rel="stylesheet" href="/DES-WEB/app/carrinho/carrinho-style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a href="/DES-WEB/app/index/index.html">Voltar</a>
+    </header>
+
+    <main>
+      <div class="page-title">Meu carrinho</div>
+      <div class="content">
+        <!-- Tabela dos produtos -->
+        <section>
+          <table>
+            <thead>
+              <tr>
+                <th>produto</th>
+                <th>preço</th>
+                <th>quantidade</th>
+                <th>total</th>
+                <th>-</th>
+              </tr>
+            </thead>
+            <tbody>
+                <!-- Linha do produto 1 -->
+              <tr>
+                <td>
+                  <div class="product">
+                    <img src="https://picsum.photos/100/120" alt="" /> <!-- Imagem da Palha -->
+                    <div class="info">
+                      <div class="name">Nome do produto</div>
+                      <div class="category">Categoria</div>
+                    </div>
+                  </div>
+                </td>
+                <td>R$</td>
+                <td>
+                  <div class="quantidade">
+                    <button><i class="bx bx-minus"></i></button>
+                    <span>2</span>
+                    <button><i class="bx bx-plus"></i></button>
+                  </div>
+                </td>
+                <td>R$</td>
+                <td>
+                  <!-- botão de exclusão -->
+                  <button class="remove"><i class="bx bx-x"></i></button>
+                </td>
+              </tr>
+              <!-- ----------- -->
+              <!-- Linha do produto 2 -->
+              <tr>
+                <td>
+                  <div class="product">
+                    <img src="https://picsum.photos/100/120" alt="" /> <!-- Imagem da Palha -->
+                    <div class="info">
+                      <div class="name">Nome do produto</div>
+                      <div class="category">Categoria</div>
+                    </div>
+                  </div>
+                </td>
+                <td>R$</td>
+                <td>
+                  <div class="quantidade">
+                    <button><i class="bx bx-minus"></i></button>
+                    <span>2</span>
+                    <button><i class="bx bx-plus"></i></button>
+                  </div>
+                </td>
+                <td>R$</td>
+                <td>
+                  <!-- botão de exclusão -->
+                  <button class="remove"><i class="bx bx-x"></i></button>
+                </td>
+              </tr>
+              <!-- ---------- -->
+              <!-- Linha do produto 3 -->
+              <tr>
+                <td>
+                  <div class="product">
+                    <img src="https://picsum.photos/100/120" alt="" />  <!-- Imagem da Palha -->
+                    <div class="info">
+                      <div class="name">Nome do produto</div>
+                      <div class="category">Categoria</div>
+                    </div>
+                  </div>
+                </td>
+                <td>R$</td>
+                <td>
+                  <div class="quantidade">
+                    <button><i class="bx bx-minus"></i></box-icon></button>
+                    <span>2</span>
+                    <button><i class="bx bx-plus"></i></button>
+                  </div>
+                </td>
+                <td>R$</td>
+                <td>
+                  <!-- botão de exclusão -->
+                  <button class="remove"><i class="bx bx-x"></i></button>
+                </td>
+              </tr>
+               <!-- ---------- -->
+
+            </tbody>
+          </table>
+        </section>
+        <!-- Resumo das compras -->
+        <aside class="resumo_Compras">
+            <div class="box"></div>
+                <header class="header_box">Resumo da compra</header>
+                <div class="info_box">
+                    <div><span>Sub-total</span><span>R$ </span></div>
+                    <div><span>Frete</span><span>Gratuito</span></div>
+                    <div><button class="button-box">Adicionar cupom de desconto<i class='bx bx-right-arrow-alt' ></i></button></div>
+                </div>
+                <footer>
+                    <span>Total</span>
+                    <span>R$</span>
+                </footer>
+            <button class="button-buy">Finalizar compra</button>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>
