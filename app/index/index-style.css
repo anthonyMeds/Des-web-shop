@@ -61,6 +61,13 @@ html{
     align-items: center;
 }
 
+#navbarNav{
+    background-color: #296b45;
+}
+li.nav-item:hover{
+    background-color: #f83535;
+}
+
 .menu{
     display: flex;
     flex-wrap: wrap;
