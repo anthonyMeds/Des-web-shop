@@ -67,3 +67,96 @@ html{
 li.nav-item:hover{
     background-color: #f83535;
 }
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+}
+
+.botao-carrinho{
+    width: 150px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 25px;
+    border-color: white;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    transition: 500ms;
+    margin-bottom: 10px;
+}
+
+.botao-carrinho:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.contato{
+    height: 100vh;
+    width: 100vw;
+    background-color:#ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.redes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botao1{
+    border: 1px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Quando o mouse estiver sobre o botão */
+.botao1:hover {
+    background: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #8a0eac, #6107cf, #4404d8);
+    color: white;
+    
+}
+
+/* Estilize o ícone do Instagram (use a font-awesome ou substitua pelo ícone desejado) */
+.botao1 i {
+    margin-right: 5px;
+    color: black; /* Cor inicial do ícone (preto) */
+}
+
+/* Quando o mouse estiver sobre o botão, altere a cor do ícone */
+.botao1:hover i {
+    color: white; /* Cor do ícone no hover (branco) */
+}
+
+.opcoes{
+    display: flex;
+    align-items: row;
+}
+
+.op-retirada{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
