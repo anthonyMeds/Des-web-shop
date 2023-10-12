@@ -94,6 +94,11 @@ li.nav-item:hover{
     margin-bottom: 10px;
 }
 
+.botao-carrinho > a {
+    text-decoration: none;
+    color: white;
+}
+
 .botao-carrinho:hover{
     background-color: white;
     border: 1px solid black;
