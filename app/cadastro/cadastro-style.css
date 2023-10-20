@@ -72,6 +72,16 @@ html {
     text-align: center;
 }
 
+ /*fico devendo*/
+ #formFooter {
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+  }
+
 /* Estilos para as abas, se aplicável */
 h2.inactive {
     color: #cccccc;
@@ -108,15 +118,11 @@ input[type=reset] {
 }
 
 /* Estilos para botões no hover e em estado ativo */
-input[type=button]:hover,
-input[type=submit]:hover,
-input[type=reset]:hover {
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
     background-color: #f83535;
 }
 
-input[type=button]:active,
-input[type=submit]:active,
-input[type=reset]:active {
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active {
     -moz-transform: scale(0.95);
     -webkit-transform: scale(0.95);
     -o-transform: scale(0.95);
@@ -125,9 +131,7 @@ input[type=reset]:active {
 }
 
 /* Estilos para os campos de nome, email, senha e confirmar senha */
-input[type=text],
-input[type=email],
-input[type=password] {
+input[type=text], input[type=email], input[type=password] {
     background-color: #f6f6f6;
     border: none;
     color: #0d0d0d;
@@ -149,21 +153,45 @@ input[type=password] {
 }
 
 /* Estilos para campos de entrada ao receber foco */
-input[type=text]:focus,
-input[type=email]:focus,
-input[type=password]:focus {
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
     background-color: #fff;
     border-bottom: 2px solid #f83535;
 }
 
 /* Estilos para o placeholder dos campos */
-input[type=text]::placeholder,
-input[type=email]::placeholder,
-input[type=password]::placeholder {
+input[type=text]::placeholder, input[type=email]::placeholder, input[type=password]::placeholder {
     color: #cccccc;
 }
 
 /* Estilos para o botão de cadastrar */
+input[type=submit] {
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+/* Estilos para campos de entrada ao receber foco */
+input[type=submit]:focus {
+    background-color: #fff;
+    border-bottom: 2px solid #f83535;
+}
+
+/* Estilos para o botão em estado ativo */
 input[type=submit]:focus {
     background-color: #fff;
     border-bottom: 2px solid #f83535;

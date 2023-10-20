@@ -162,7 +162,7 @@ input[type=email]::placeholder, input[type=password]::placeholder {
 }
 
 /* Estilos para o botão de redefinir senha */
-input[type=password] {
+input[type=submit] {
     background-color: #f6f6f6;
     border: none;
     color: #0d0d0d;
@@ -184,7 +184,7 @@ input[type=password] {
 }
 
 /* Estilos para campos de entrada ao receber foco */
-input[type=password]:focus {
+input[type=submit]:focus {
     background-color: #fff;
     border-bottom: 2px solid #f83535;
 }
