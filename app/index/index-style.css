@@ -165,3 +165,15 @@ li.nav-item:hover{
     flex-direction: column;
     align-items: center;
 }
+
+.media-img{
+    height: 70vh; 
+    width: 80vw;
+}
+
+@media (max-width:750px){
+    .media-img{
+        height: auto; 
+        width: 70vw;
+    }
+}
