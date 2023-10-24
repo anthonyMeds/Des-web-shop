@@ -70,11 +70,28 @@ li.nav-item:hover{
 
 .menu{
     display: flex;
-    flex-wrap: wrap;
-    gap: 150px;
+
     justify-content: center;
     height: 50%;
     width: 100%;
+    overflow-x: scroll;
+}
+
+.cartao{
+    width: 550px; 
+    height: 300px; 
+    line-height: 110px;
+    text-align: center;
+    background-color: rgb(243, 225, 192);
+    border-radius: 15px;
+    margin-right: 100px;
+}
+
+.img-cartao{
+    width: 300px;
+    height: 200px;
+    padding: 5px;
+    border-radius: 15px;
 }
 
 .botao-carrinho{
