@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrinho de compras</title>
-    <link rel="stylesheet" href="Carrinho_estilo.css" />
+    <link rel="stylesheet" href="carrinho-style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -24,7 +24,7 @@
           <table>
             <thead>
               <tr>
-                <th>produto</th>
+                <th>Palha Café</th>
                 <th>preço</th>
                 <th>quantidade</th>
                 <th>total</th>
@@ -33,18 +33,19 @@
             </thead>
             <tbody>
                 <!-- Linha do produto 1 -->
-              <tr>
-                <td>
-                  <div class="product">
-                    <img src="https://picsum.photos/100/120" alt="" /> <!-- Imagem da Palha -->
-                    <div class="info">
+              <tr class="produto1">
+                <div class="conteudo_produto">
+                  <td>
+                    <div class="product">
+                      <img src="" alt="" /> <!-- Imagem da Palha -->
+                      <div class="info">
                       <div class="name">Nome do produto</div>
                       <div class="category">Categoria</div>
                     </div>
-                  </div>
-                </td>
-                <td>R$</td>
-                <td>
+                    </div>
+                  </td>
+                  <td>R$</td>
+                 <td>
                   <div class="quantidade">
                     <button><i class="bx bx-minus"></i></button>
                     <span>2</span>
@@ -53,13 +54,15 @@
                 </td>
                 <td>R$</td>
                 <td>
+                </div>
                   <!-- botão de exclusão -->
                   <button class="remove"><i class="bx bx-x"></i></button>
                 </td>
               </tr>
+            </div>
               <!-- ----------- -->
               <!-- Linha do produto 2 -->
-              <tr>
+              <tr class="produto2">
                 <td>
                   <div class="product">
                     <img src="https://picsum.photos/100/120" alt="" /> <!-- Imagem da Palha -->
@@ -85,7 +88,7 @@
               </tr>
               <!-- ---------- -->
               <!-- Linha do produto 3 -->
-              <tr>
+              <tr class="produto3">
                 <td>
                   <div class="product">
                     <img src="https://picsum.photos/100/120" alt="" />  <!-- Imagem da Palha -->
