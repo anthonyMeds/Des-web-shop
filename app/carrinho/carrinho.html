@@ -9,6 +9,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <script type="text/javascript" src="./carrinho-script.js"></script>
   </head>
 
   <body>
@@ -37,19 +38,19 @@
                 <div class="conteudo_produto">
                   <td>
                     <div class="product">
-                      <img src="DES-WEB/assets/imgs/palha-cafe.png" alt="palha italiana sabor café" /> <!-- Imagem da Palha -->
+                      <img class="palhas" src="../../assets/imgs/palha-cafe.png" alt="palha italiana sabor café" /> <!-- Imagem da Palha -->
                       <div class="info">
                       <div class="name">Palha café</div>
                       <div class="category">Doce</div>
                     </div>
                     </div>
                   </td>
-                  <td>R$</td>
+                  <td>R$ 4,50</td>
                  <td>
                   <div class="quantidade">
-                    <button><i class="bx bx-minus"></i></button>
-                    <span>2</span>
-                    <button><i class="bx bx-plus"></i></button>
+                    <button onclick="diminuir()" class="remover"><i class="bx bx-minus"></i></button>
+                    <span class="quant">0</span>
+                    <button onclick="adicionar()" class="adicionar"><i class="bx bx-plus"></i></button>
                   </div>
                 </td>
                 <td>R$</td>
@@ -65,18 +66,18 @@
               <tr class="produto2">
                 <td>
                   <div class="product">
-                    <img src="DES-WEB/assets/imgs/palha-chocolate.jpg" alt="palha italiana Sabor chocolate" /> <!-- Imagem da Palha -->
+                    <img class="palhas" src="../../assets/imgs/palha-chocolate.jpg" alt="palha italiana Sabor chocolate" /> <!-- Imagem da Palha -->
                     <div class="info">
                       <div class="name">Palha chocolate</div>
                       <div class="category">Doce</div>
                     </div>
                   </div>
                 </td>
-                <td>R$</td>
+                <td>R$ 4,50</td>
                 <td>
                   <div class="quantidade">
                     <button><i class="bx bx-minus"></i></button>
-                    <span>2</span>
+                    <span class="quant">0</span>
                     <button><i class="bx bx-plus"></i></button>
                   </div>
                 </td>
@@ -91,18 +92,18 @@
               <tr class="produto3">
                 <td>
                   <div class="product">
-                    <img src="DES-WEB/assets/imgs/palha-ninho.webp" alt="palha italiana sabor Ninho" />  <!-- Imagem da Palha -->
+                    <img class="palhas" src="../../assets/imgs/palha-ninho.webp" alt="palha italiana sabor Ninho" />  <!-- Imagem da Palha -->
                     <div class="info">
                       <div class="name">Palha Ninho</div>
                       <div class="category">Doce</div>
                     </div>
                   </div>
                 </td>
-                <td>R$</td>
+                <td>R$ 4,50</td>
                 <td>
                   <div class="quantidade">
                     <button><i class="bx bx-minus"></i></box-icon></button>
-                    <span>2</span>
+                    <span class="quant">0</span>
                     <button><i class="bx bx-plus"></i></button>
                   </div>
                 </td>
