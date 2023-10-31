@@ -13,6 +13,8 @@ html{
 .pagina-carrinho {
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
 }
 
 /* botao voltar - carrinho */
@@ -26,6 +28,7 @@ html{
     font-size: 32px;
     text-decoration: none;
     color: #000;
+    margin-left: 30px;
 }
 
 /*PRODUTOS*/
@@ -41,7 +44,7 @@ html{
 
 .titulo-catalogo {
     height: 10%;
-    width: 100vw;
+    width: 80vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,6 +79,121 @@ html{
     height: 200px;
     padding: 5px;
     border-radius: 15px;
+}
+
+
+/*Preço e botão de adicionar no carrinho*/
+
+.preco-botao-adicionar-carrinho {
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .preco {
+    margin-right: 12px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+  }
+  
+  .button-hover-background {
+    background: red;
+    color: white;
+    border: 2px solid red;
+    border-radius: 6px;
+    padding: 4px 2px;
+    font-weight: bold;
+  
+    transition: 0.2s;
+  }
+  
+  .button-hover-background:hover {
+    background: transparent;
+    color: red;
+  }
+
+
+/* Carrinho com produtos e valor final */
+.carrinho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-carrinho {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.tabela-carrinho {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.tabela-carrinho th,
+.tabela-carrinho td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.tabela-carrinho th {
+    background-color: #f0f0f0;
+}
+
+.imagem-produto {
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 6px;
+}
+
+.titulo-produto {
+    font-weight: bold;
+    margin-top: 6px;
+    display: block;
+}
+
+.preco-produto {
+    font-weight: bold;
+    color: #2ecc71;
+}
+
+.quantidade-input,
+.botao-remover {
+    margin-top: 6px;
+    padding: 4px 8px;
+    font-size: 14px;
+}
+
+.total-container {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right;
+}
+
+.botao-compra {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao-compra:hover {
+    background-color: #27ae60;
 }
 
 

@@ -28,34 +28,120 @@
           <img class="img-cartao" src="../../assets/imgs/palha-chocolate.jpg" alt="Card image cap">
           <div class="card-body">
             <p class="card-text" style="font-family: 'Limelight', cursive; font-size: 20px;">Palha Tradicional</p>
+
+            <div class="preco-botao-adicionar-carrinho">
+              <span class="preco">R$9,99</span>
+              <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+            </div>
+
           </div>
         </div>
         <div class="cartao">
           <img class="img-cartao" src="../../assets/imgs/palha-ninho.webp" alt="Card image cap">
           <div class="card-body">
             <p class="card-text" style="font-family: 'Limelight', cursive; font-size: 20px;">Palha de Ninho</p>
+
+            <div class="preco-botao-adicionar-carrinho">
+              <span class="preco">R$9,99</span>
+              <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+            </div>
+
           </div>
         </div>
         <div class="cartao">
           <img class="img-cartao" src="../../assets/imgs/palha-italiana-de-doce-de-leite-1.jpg" alt="Card image cap">
           <div class="card-body">
             <p class="card-text" style="font-family: 'Limelight', cursive; font-size: 20px;">Palha de Doce de Leite</p>
+
+            <div class="preco-botao-adicionar-carrinho">
+              <span class="preco">R$9,99</span>
+              <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+            </div>
+
           </div>
         </div>
         <div class="cartao">
           <img class="img-cartao" src="../../assets/imgs/palha-paçoca.jpg" alt="Card image cap">
           <div class="card-body">
             <p class="card-text" style="font-family: 'Limelight', cursive; font-size: 20px;">Palha de Paçoca</p>
+
+            <div class="preco-botao-adicionar-carrinho">
+              <span class="preco">R$9,99</span>
+              <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+            </div>
+
           </div>
         </div>
         <div class="cartao">
           <img class="img-cartao" src="../../assets/imgs/palha-cafe.png" alt="Card image cap">
           <div class="card-body">
             <p class="card-text" style="font-family: 'Limelight', cursive; font-size: 20px;text-align: center;">Palha de Café</p>  
+
+            <div class="preco-botao-adicionar-carrinho">
+              <span class="preco">R$9,99</span>
+              <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+            </div>
+
           </div>
         </div>
       </div>
     </section>
+
+    <!--carrinho com os produtos-->
+
+    <section class="carrinho">
+      <h2 class="titulo-carrinho">Carrinho de Compras</h2>
+  
+      <table class="tabela-carrinho">
+          <thead>
+              <tr>
+                  <th class="coluna primeiro-col">Produto</th>
+                  <th class="coluna segundo-col">Preço</th>
+                  <th class="coluna terceiro-col">Quantidade</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr class="produto-carrinho">
+                  <td class="identificacao-produto">
+                      <img src="images/produto2.png" alt="Miniatura" class="imagem-produto">
+                      <strong class="titulo-produto">Miniatura</strong>
+                  </td>
+                  <td>
+                      <span class="preco-produto">R$69,90</span>
+                  </td>
+                  <td>
+                      <input type="number" value="2" min="0" class="quantidade-input">
+                      <button type="button" class="botao-remover">Remover</button>
+                  </td>
+              </tr>
+              <tr class="produto-carrinho">
+                  <td class="identificacao-produto">
+                      <img src="images/poster3.png" alt="Poster 3" class="imagem-produto">
+                      <strong class="titulo-produto">Poster 3</strong>
+                  </td>
+                  <td>
+                      <span class="preco-produto">R$19,99</span>
+                  </td>
+                  <td>
+                      <input type="number" value="1" min="0" class="quantidade-input">
+                      <button type="button" class="botao-remover">Remover</button>
+                  </td>
+              </tr>
+          </tbody>
+          <tfoot>
+              <tr>
+                  <td colspan="3" class="total-container">
+                      <strong>Total</strong>
+                      <span>R$0,00</span>
+                  </td>
+              </tr>
+          </tfoot>
+      </table>
+  
+      <button type="button" class="botao-compra">Finalizar Compra</button>
+  </section>
+  
+
 
   </body>
 </html>
