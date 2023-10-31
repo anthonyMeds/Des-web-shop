@@ -1,181 +1,223 @@
 @import url('https://fonts.googleapis.com/css2?family=Limelight&family=Vollkorn&display=swap');
 
-body{
-    /* background-color: red; */
-    font-family: 'Vollkorn', serif; font-size: 20px; text-align: center;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-body > header{
-    background: green; 
-    color: white;
-    font-size: 24px;
-    padding: 20px 0;
+
+html{
+    scroll-behavior: smooth;
+}
+
+.pagina-carrinho {
+    height: 100vh;
+    width: 100vw;
     display: flex;
-    
+    flex-direction: column;
 }
-a{
+
+/* botao voltar - carrinho */
+
+.navbar {
+    background-color: transparent;
+}
+
+.navbar > a {
+    font-family: 'Limelight';
+    font-size: 32px;
     text-decoration: none;
-    color: white;
-    margin-left: 10px;
-}
-
-main{
-    background: white;
-    text-align: left;
-}
-main .page-title{
-    color: white;
-    background: red;
-    font-size: 40px;
-    padding: 50px 0;
-    text-align: center;
-    padding: 0 30px 30px;
-    margin-bottom: 10px;
-    
-}
-main .content{
-    display: flex;
-}
-section{
-   flex: 1; 
-}
-aside{
-    min-width: 250px;
-}
-table{
-    width: 100%;
-    border-collapse: collapse;
-}
-
-tr{
-    border-bottom: 3px solid #ccc;
-}
-tr:last-child{
-    border: 0;
-}
-th{
-    text-align: left;
-    padding-bottom: 16px;
-    text-transform: uppercase;
-    color: #666;
-}
-
-td{
-    padding: 30px 0;
-}
-.product{
-    display: flex;
-    align-items: center;
-    
-}
-img{
-    border-radius: 6px;
-}
-.info{
-    margin-left: 20px;
-}
-.name{
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-.category{
-    color: #666;
-}
-span{
-    margin: 0 10px;
-}
-button{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    padding: 0 10px;
-    font-size: 20px;
-    height: 100%;
-}
-button:hover{
-    background: #ddd;
-}
-.quantidade{
-    background: #eee;
-    display: inline-flex;
-    padding: 0 0;
-    justify-content: space-around;
-    align-items: center;
-    min-width: 60px;
-    border-radius: 20px;
-    overflow: hidden;
-    height: 30px;
-}
-.remove{
-    background: #eee;
-    border: 0;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    cursor: pointer;
-}
-.remove:hover{
-    background: #ddd;
-}
-aside{
-    margin-bottom: 15px;
-    border: 1px solid;
-    background: #ddd;
-    height: 263px;
+    color: #000;
     margin-left: 30px;
 }
-.header_box{
-    padding: 15px 20px;
-    font-size: 20px;
-    border-bottom: 1px solid #ccc;
-    
 
-}
-.info_box{
-    padding: 20px;
-}
-.info_box > div{
+/*PRODUTOS*/
+.container{
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    color: #333
-}
-footer{
-    padding: 20px;
-    background: #ccc;
-    padding: 15px 20px;
-    font-size: 18px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 95%;
+    width: 100%;
+    background-color:#be0b20;
 }
 
-.button-box{
-    color: green;
-    background: transparent;
-    border: 0;
+.titulo-catalogo {
+    height: 10%;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+.menu{
     display: flex;
     align-items: center;
-    
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 90%;
+    width: 90%;
+    overflow-x: scroll;
 }
-.button-box > i{
-    font-size: 20px;
+
+
+
+.cartao{
+    width: 550px; 
+    height: 300px; 
+    text-align: center;
+    background-color: rgb(243, 225, 192);
+    border-radius: 15px;
+    margin-right: 100px;
+    margin-left: 2rem;
+    margin-top: 50px;
 }
-.button-buy{
-    margin-top: 5px;
-    background: green;
-    color: white;
-    border: 0;
-    padding: 15px 0;
-    display: block;
+
+.img-cartao{
+    width: 300px;
+    height: 200px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+
+/*Preço e botão de adicionar no carrinho*/
+
+.preco-botao-adicionar-carrinho {
+    margin-top: 8px;
     width: 100%;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    height: 50px;
-    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .preco {
+    margin-right: 12px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+  }
+  
+  .button-hover-background {
+    background: red;
+    color: white;
+    border: 2px solid red;
+    border-radius: 6px;
+    padding: 4px 2px;
+    font-weight: bold;
+  
+    transition: 0.2s;
+  }
+  
+  .button-hover-background:hover {
+    background: transparent;
+    color: red;
+  }
+
+
+/* Carrinho com produtos e valor final */
+.carrinho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
-.button-buy:hover{
-    background-color: red;
+
+.titulo-carrinho {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.tabela-carrinho {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.tabela-carrinho th,
+.tabela-carrinho td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.tabela-carrinho th {
+    background-color: #f0f0f0;
+}
+
+.imagem-produto {
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 6px;
+}
+
+.titulo-produto {
+    font-weight: bold;
+    margin-top: 6px;
+    display: block;
+}
+
+.preco-produto {
+    font-weight: bold;
+    color: #2ecc71;
+}
+
+.quantidade-input,
+.botao-remover {
+    margin-top: 6px;
+    padding: 4px 8px;
+    font-size: 14px;
+}
+
+.total-container {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right;
+}
+
+.botao-compra {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao-compra:hover {
+    background-color: #27ae60;
+}
+
+
+
+/*estilização so scroll eixo x*/
+
+/* Estilizando a barra de rolagem */
+.menu::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+/* Estilizando o "trilho" da barra de rolagem */
+.menu::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor do "trilho" */
+    border-radius: 10px; /* Arredonda as bordas do "trilho" */
+}
+
+/* Estilizando a alça da barra de rolagem */
+.menu::-webkit-scrollbar-thumb {
+    background-color: #888888; /* Cor da alça */
+    border-radius: 6px; /* Arredonda as bordas da alça */
+}
+
+/* Estilizando a alça da barra de rolagem quando passa o mouse por cima */
+.menu::-webkit-scrollbar-thumb:hover {
+    background: #015b3f; /* Cor da alça quando hover */
 }
