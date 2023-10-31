@@ -70,11 +70,13 @@ li.nav-item:hover{
 
 .menu{
     display: flex;
-
-    justify-content: center;
     height: 50%;
     width: 100%;
-    overflow-x: scroll;
+    overflow-x:scroll;
+}
+
+.menu::-webkit-scrollbar{
+   background-color: #296b45;
 }
 
 .cartao{
@@ -85,6 +87,7 @@ li.nav-item:hover{
     background-color: rgb(243, 225, 192);
     border-radius: 15px;
     margin-right: 100px;
+    margin-left: 2rem;
 }
 
 .img-cartao{
@@ -94,12 +97,22 @@ li.nav-item:hover{
     border-radius: 15px;
 }
 
+.chamada-carrinho{
+    margin-top: 25px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items:center; 
+    gap: 15px;
+}
+
 .botao-carrinho{
     width: 150px;
     height: 50px;
     border: 1px solid;
     border-radius: 25px;
     border-color: white;
+    text-decoration: none;
     color: white;
     background-color: transparent;
     cursor: pointer;
@@ -111,10 +124,7 @@ li.nav-item:hover{
     margin-bottom: 10px;
 }
 
-.botao-carrinho > a {
-    text-decoration: none;
-    color: white;
-}
+
 
 .botao-carrinho:hover{
     background-color: white;
@@ -181,4 +191,26 @@ li.nav-item:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.media-img{
+    height: 75vh; 
+    width: 75vw;
+}
+
+@media (max-width:750px){
+    .media-img{
+        height: auto; 
+        width: 70vw;
+    }
+
+    .menu{
+        height: 400px;
+        margin-bottom: 50px;
+    }
+
+    .catalogo-sub{
+        text-align: center;
+        font-size:20px;
+    }
 }
