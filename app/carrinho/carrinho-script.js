@@ -6,6 +6,8 @@ if(document.readyState == "loading") {
 }
 
 
+let valorTotal = "0,00"
+
 function ready() {
 
 
@@ -20,7 +22,7 @@ function ready() {
     // dinamizar valorTotalDo carrinho com input quantidades
     const quantidadeInputs = document.getElementsByClassName("quantidade-input")
     for( var i = 0; i < quantidadeInputs.length; i++) {
-        quantidadeInputs[i].addEventListener("change", atualizaTotal)
+        quantidadeInputs[i].addEventListener("change", checarSeAquantidadeENula)
     }
 
     //adicionar produtos no carrinho
@@ -29,7 +31,44 @@ function ready() {
         botaoAdicionarProdutoNoCarrinho[i].addEventListener("click", adicionarProdutoNoCarrinho)
     }
 
+    //funcionalidade ao finalizar compra mostrar mensagem
+    const botaoCompra = document.getElementsByClassName("botao-compra")[0]
+    botaoCompra.addEventListener("click", mensagemCompra)
 }
+
+
+//função de mensagem ao clicar no finalizar compra
+function mensagemCompra() {
+    if(valorTotal == "0,00"){
+        alert("Seu carrinho está vazio.")
+    } else {
+        alert(
+            `
+                Obrigado pela sua compra!
+                Valor do pedido : R$${valorTotal}
+                Volte sempre :)
+            `
+        )
+    }
+
+    //zerar carrinho ao finalizar
+    const tbody = document.querySelector(".tabela-carrinho tbody");
+    tbody.innerHTML = "";
+    atualizaTotal()
+}
+
+
+
+//funcao que checa se a quantidade de itens é 0 e remove o produto
+function checarSeAquantidadeENula(event) {
+
+    if(event.target.value == "0") {
+        removerProdutos(event)
+    }
+
+    atualizaTotal()
+}
+
 
 //função que adiciona produtos no carrinho
 function adicionarProdutoNoCarrinho (event) {
@@ -95,8 +134,7 @@ function removerProdutos(event) {
 // atualizar preço total do carrinho ao remover produto
 
 function atualizaTotal() {
-
-    let valorTotal = 0
+    valorTotal = 0
     const produtosNoCarrinho = document.getElementsByClassName("produto-carrinho")
 
 
