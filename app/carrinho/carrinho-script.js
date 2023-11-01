@@ -39,41 +39,46 @@ function adicionarProdutoNoCarrinho (event) {
     const nomeProduto = informacaoDosProdutos.getElementsByClassName("card-text")[0].innerText
     const precoProduto = informacaoDosProdutos.getElementsByClassName("preco")[0].innerText
 
-    const titulosProdutos = document.getElementsByClassName("titulo-produto")[0]
-    
+    const titulosProdutos = document.querySelectorAll(".titulo-produto");
+
+    let produtoJaNoCarrinho = false;
+
     // Checar se produto já está no carrinho
     for (let i = 0; i < titulosProdutos.length; i++) {
         if (titulosProdutos[i].innerText == nomeProduto) {
             // Aumentar a quantidade
-            const ai = titulosProdutos[i].parentElement.parentElement.querySelector(".quantidade-input").value++;
-            console.log(ai);
+            titulosProdutos[i].parentElement.parentElement.querySelector(".quantidade-input").value++;
+            produtoJaNoCarrinho = true;
+             break;
         }
     }
 
-    // escrever no html esses dados obtidos
-    let novoProdutoNoCarrinho = document.createElement("tr")
-    novoProdutoNoCarrinho.classList.add("produto-carrinho")
+    if (!produtoJaNoCarrinho) {
+        // escrever no html esses dados obtidos
+        let novoProdutoNoCarrinho = document.createElement("tr")
+        novoProdutoNoCarrinho.classList.add("produto-carrinho")
 
-    novoProdutoNoCarrinho.innerHTML = 
-    `<td class="identificacao-produto">
-        <img src="${imagemProduto}" alt=${nomeProduto} class="imagem-produto">
-        <strong class="titulo-produto">${nomeProduto}</strong>
-    </td>
-    <td>
-        <span class="preco-produto">${precoProduto}</span>
-    </td>
-    <td>
-        <input type="number" value="1" min="0" class="quantidade-input">
-        <button type="button" class="botao-remover">Remover</button>
-    </td> 
-`
+        novoProdutoNoCarrinho.innerHTML = 
+        `<td class="identificacao-produto">
+            <img src="${imagemProduto}" alt=${nomeProduto} class="imagem-produto">
+            <strong class="titulo-produto">${nomeProduto}</strong>
+        </td>
+        <td>
+            <span class="preco-produto">${precoProduto}</span>
+        </td>
+        <td>
+            <input type="number" value="1" min="0" class="quantidade-input">
+            <button type="button" class="botao-remover">Remover</button>
+        </td> 
+    `
 
-    const tbody = document.querySelector(".tabela-carrinho tbody")
-    tbody.append(novoProdutoNoCarrinho)
+        const tbody = document.querySelector(".tabela-carrinho tbody")
+        tbody.append(novoProdutoNoCarrinho)
 
-    //atualizar valor total após adição do carrinho
-    atualizaTotal()
-    ready();
+        //atualizar valor total após adição do carrinho
+        atualizaTotal()
+        ready();
+    }
 }
 
 
