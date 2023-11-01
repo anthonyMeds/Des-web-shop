@@ -75,10 +75,6 @@ li.nav-item:hover{
     overflow-x:scroll;
 }
 
-.menu::-webkit-scrollbar{
-   background-color: #296b45;
-}
-
 .cartao{
     width: 550px; 
     height: 300px; 
@@ -197,6 +193,34 @@ li.nav-item:hover{
     height: 75vh; 
     width: 75vw;
 }
+
+
+
+/*estilização so scroll eixo x*/
+
+/* Estilizando a barra de rolagem */
+.menu::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+/* Estilizando o "trilho" da barra de rolagem */
+.menu::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor do "trilho" */
+    border-radius: 10px; /* Arredonda as bordas do "trilho" */
+}
+
+/* Estilizando a alça da barra de rolagem */
+.menu::-webkit-scrollbar-thumb {
+    background-color: #888888; /* Cor da alça */
+    border-radius: 6px; /* Arredonda as bordas da alça */
+}
+
+/* Estilizando a alça da barra de rolagem quando passa o mouse por cima */
+.menu::-webkit-scrollbar-thumb:hover {
+    background: #015b3f; /* Cor da alça quando hover */
+}
+
+
 
 @media (max-width:750px){
     .media-img{
