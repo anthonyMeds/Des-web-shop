@@ -1,0 +1,215 @@
+/* CSS para a página de redefinição de senha */
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* Estilos gerais para o HTML */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Estilos para a página de redefinição de senha */
+.paginaRedefineSenha {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para a seção home (fundo) */
+.home{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../../assets/imgs/palha-bg.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    -webkit-box-shadow: inset 0px 0px 300px 160px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 300px 160px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 300px 160px rgba(0,0,0,0.75);
+}
+
+/* Estilos para o logo no topo */
+.home-logo{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-logo img{
+    width: 350px;
+    height: auto; 
+    position: relative;
+}
+
+/* Estilos para o wrapper que contém o formulário de redefinição de senha */
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+    position: absolute;
+  }
+
+/* Estilos para o formulário de redefinição de senha */
+#formContent {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+ /*fico devendo*/
+ #formFooter {
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+  }
+
+/* Estilos para as abas, se aplicável */
+h2.inactive {
+    color: #cccccc;
+  }
+  
+  h2.active {
+    color: #0d0d0d;
+    border-bottom: 2px solid #f83535;
+  }
+  
+  /* Estilos para botões */
+  input[type=button], input[type=submit], input[type=reset]  {
+    background-color: rgb(255, 93, 93);
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    -webkit-box-shadow: 0 10px 30px 0 #f83535;
+    box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px 20px 40px 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+    background-color: #f83535;
+  }
+  /* Estilos para botões no hover e em estado ativo */
+  input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+
+/* Estilos para os campos de email, nova senha e confirmar senha */
+input[type=email], input[type=password] {
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+/* Estilos para o campo de email e senha em foco */
+input[type=email]:focus, input[type=password]:focus {
+    background-color: #fff;
+    border-bottom: 2px solid #f83535;
+}
+
+/* Estilos para o placeholder dos campos */
+input[type=email]::placeholder, input[type=password]::placeholder {
+    color: #cccccc;
+}
+
+/* Estilos para o botão de redefinir senha */
+input[type=submit] {
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+/* Estilos para campos de entrada ao receber foco */
+input[type=submit]:focus {
+    background-color: #fff;
+    border-bottom: 2px solid #f83535;
+}
+
+/* Estilos para o botão de redefinir senha em estado ativo */
+input[type=submit]:focus {
+    background-color: #fff;
+    border-bottom: 2px solid #f83535;
+}
+
+/* Estilos para o link "Voltar ao Login" */
+.underlineHover {
+    color: #f83535;
+}
+
+/* Outros estilos */
+*:focus {
+    outline: none;
+}
+
+/* Estilos para o ícone, se aplicável */
+#icon {
+    width: 60%;
+}
+
+* {
+    box-sizing: border-box;
+}

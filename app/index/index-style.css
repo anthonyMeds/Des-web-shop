@@ -70,11 +70,36 @@ li.nav-item:hover{
 
 .menu{
     display: flex;
-    flex-wrap: wrap;
-    gap: 150px;
-    justify-content: center;
     height: 50%;
     width: 100%;
+    overflow-x:scroll;
+}
+
+.cartao{
+    width: 550px; 
+    height: 300px; 
+    line-height: 110px;
+    text-align: center;
+    background-color: rgb(243, 225, 192);
+    border-radius: 15px;
+    margin-right: 100px;
+    margin-left: 2rem;
+}
+
+.img-cartao{
+    width: 300px;
+    height: 200px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.chamada-carrinho{
+    margin-top: 25px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items:center; 
+    gap: 15px;
 }
 
 .botao-carrinho{
@@ -83,6 +108,7 @@ li.nav-item:hover{
     border: 1px solid;
     border-radius: 25px;
     border-color: white;
+    text-decoration: none;
     color: white;
     background-color: transparent;
     cursor: pointer;
@@ -94,10 +120,7 @@ li.nav-item:hover{
     margin-bottom: 10px;
 }
 
-.botao-carrinho > a {
-    text-decoration: none;
-    color: white;
-}
+
 
 .botao-carrinho:hover{
     background-color: white;
@@ -171,9 +194,47 @@ li.nav-item:hover{
     width: 75vw;
 }
 
+
+
+/*estilização so scroll eixo x*/
+
+/* Estilizando a barra de rolagem */
+.menu::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+/* Estilizando o "trilho" da barra de rolagem */
+.menu::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor do "trilho" */
+    border-radius: 10px; /* Arredonda as bordas do "trilho" */
+}
+
+/* Estilizando a alça da barra de rolagem */
+.menu::-webkit-scrollbar-thumb {
+    background-color: #888888; /* Cor da alça */
+    border-radius: 6px; /* Arredonda as bordas da alça */
+}
+
+/* Estilizando a alça da barra de rolagem quando passa o mouse por cima */
+.menu::-webkit-scrollbar-thumb:hover {
+    background: #015b3f; /* Cor da alça quando hover */
+}
+
+
+
 @media (max-width:750px){
     .media-img{
         height: auto; 
         width: 70vw;
+    }
+
+    .menu{
+        height: 400px;
+        margin-bottom: 50px;
+    }
+
+    .catalogo-sub{
+        text-align: center;
+        font-size:20px;
     }
 }
