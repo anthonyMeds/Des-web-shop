@@ -49,6 +49,8 @@ function adicionarProdutoNoCarrinho (event) {
             // Aumentar a quantidade
             titulosProdutos[i].parentElement.parentElement.querySelector(".quantidade-input").value++;
             produtoJaNoCarrinho = true;
+            atualizaTotal()
+            ready();
              break;
         }
     }
