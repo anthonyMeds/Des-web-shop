@@ -1,6 +1,6 @@
 
 if(document.readyState == "loading") {
-    document.addEventListener("DOMContentLoaded", ready())
+    document.addEventListener("DOMContentLoaded", ready)
 } else{
     ready()
 }
@@ -11,6 +11,7 @@ function ready() {
 
     // função de remover item do carrinho
     const botaoRemoverProduto = document.getElementsByClassName("botao-remover")
+    console.log(botaoRemoverProduto)
 
     for( var i = 0; i < botaoRemoverProduto.length; i++) {
         botaoRemoverProduto[i].addEventListener("click", removerProdutos)
@@ -39,7 +40,7 @@ function adicionarProdutoNoCarrinho (event) {
     const precoProduto = informacaoDosProdutos.getElementsByClassName("preco")[0].innerText
 
     const titulosProdutos = document.getElementsByClassName("titulo-produto")[0]
-
+    
     // Checar se produto já está no carrinho
     for (let i = 0; i < titulosProdutos.length; i++) {
         if (titulosProdutos[i].innerText == nomeProduto) {
@@ -72,6 +73,7 @@ function adicionarProdutoNoCarrinho (event) {
 
     //atualizar valor total após adição do carrinho
     atualizaTotal()
+    ready();
 }
 
 
@@ -102,7 +104,7 @@ function atualizaTotal() {
     valorTotal = valorTotal.toFixed(2).replace(".", ",")
 
     document.querySelector(".total-container span").innerText = "R$ " + valorTotal
-
+    ready();
 }
 
 
