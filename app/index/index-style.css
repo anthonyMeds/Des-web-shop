@@ -228,6 +228,20 @@ li.nav-item:hover{
         width: 70vw;
     }
 
+    .home-logo{
+        align-items: flex-start;
+    }
+
+    .home-logo img{
+        width: 250px;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    #id h4{
+        text-align: center;
+    }
+
     .menu{
         height: 400px;
         margin-bottom: 50px;
