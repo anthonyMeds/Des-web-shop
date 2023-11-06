@@ -27,24 +27,79 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
                 if ($conn->query($sql) !== TRUE) {
-                    echo "Erro ao registrar o pedido: " . $conn->error;
+                    echo '<div class="error mensagem">Erro ao registrar o pedido: ' . $conn->error . '</div>';
+                    echo '<a  class="mensagem" href="../index/index.html"><button class="btn">Voltar ao Início</button></a>';
                     break;
                 }
             }
 
             if ($conn->error) {
-                echo "Erro ao registrar o pedido: " . $conn->error;
+                echo '<div class="error mensagem">Erro ao registrar o pedido: ' . $conn->error . '</div>';
             } else {
-                echo "Pedido(s) registrado(s) com sucesso!";
+                echo '<div class="success mensagem">Pedido(s) registrado(s) com sucesso!</div>';
+                echo '<a class="mensagem" href="../index/index.html"><button class="btn">Voltar ao Início</button></a>';
             }
         } else {
-            echo "Dados inválidos enviados pelo formulário.";
+            echo '<div class="error mensagem">Dados inválidos enviados pelo formulário.</div>';
+            echo '<a class="mensagem" href="../carrinho/carrinho.html"><button class="btn">Voltar ao Carrinho</button></a>';
         }
     } else {
         echo "Dados ausentes no formulário.";
+        echo '<a class="mensagem" href="../carrinho/carrinho.html"><button class="btn">Voltar ao Carrinho</button></a>';
     }
 }
 
-
 $conn->close();
 ?>
+
+<style>
+
+.mensagem {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+.error-message, .success-message {
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #007bff;
+}
+
+</style>
