@@ -270,7 +270,7 @@ a.botao-carrinho:link{
     position: absolute;
     color: rgb(255, 255, 255);
     width: 125px;
-    font-weight: 600;
+    font-weight: 400;
     opacity: 0;
     transition-duration: .4s;
   }
@@ -279,7 +279,7 @@ a.botao-carrinho:link{
     position: absolute;
     color: rgb(255, 255, 255);
     width: 110px;
-    font-weight: 600;
+    font-weight: 400;
     opacity: 0;
     transition-duration: .4s;
   }
