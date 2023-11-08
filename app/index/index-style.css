@@ -350,6 +350,10 @@ a.botao-carrinho:link{
     background: #015b3f; /* Cor da alça quando hover */
 }
 
+.subtext-contact{
+    font-family: 'Vollkorn', serif; color: black; margin-top: 15px; margin-bottom: 20px;
+}
+
 
 
 @media (max-width:750px){
@@ -403,6 +407,10 @@ a.botao-carrinho:link{
       .retirada{
         width: 90vw;
         height: 250px;
+        display: none;
+      }
+      .subtext-contact{
+        text-align: center;
       }
 
       .delivery{
